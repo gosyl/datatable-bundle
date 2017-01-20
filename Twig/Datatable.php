@@ -1,8 +1,8 @@
 <?php
-namespace GendSocle\DataTableBundle\Twig;
+namespace Gosyl\DataTableBundle\Twig;
 
 /**
- * @package GendSocle
+ * @package Gosyl
  * @subpackage DataTableBundle
  * @author alexandre.lippmann
  * @version 1.0
@@ -207,23 +207,23 @@ class Datatable extends \Twig_Extension {
 		$sJs = '';
 		// Inclusion des extensions
 		if($this->bColVis) {
-			$sJs .= '<script src="/bundles/gendsocledatatable/js/library/Datatables/ColVis/js/dataTables.colVis.js"></script>';
-			$sJs .= '<link rel="stylesheet" href="/bundles/gendsocledatatable/js/library/Datatables/ColVis/css/dataTables.colvis.jqueryui.css" />';
+			$sJs .= '<script src="/bundles/gosyldatatable/js/library/Datatables/ColVis/js/dataTables.colVis.js"></script>';
+			$sJs .= '<link rel="stylesheet" href="/bundles/gosyldatatable/js/library/Datatables/ColVis/css/dataTables.colvis.jqueryui.css" />';
 		}
 		
 		if($this->bFixedHeader) {
-			$sJs .= '<script src="/bundles/gendsocledatatable/js/library/Datatables/FixedHeader-3.1.1/js/dataTables.fixedHeader.js"></script>';
-			$sJs .= '<link rel="stylesheet" href="/bundles/gendsocledatatable/js/library/Datatables/FixedHeader-3.1.1/css/fixedHeader.jqueryui.min.css" />';
+			$sJs .= '<script src="/bundles/gosyldatatable/js/library/Datatables/FixedHeader-3.1.1/js/dataTables.fixedHeader.js"></script>';
+			$sJs .= '<link rel="stylesheet" href="/bundles/gosyldatatable/js/library/Datatables/FixedHeader-3.1.1/css/fixedHeader.jqueryui.min.css" />';
 		}
 		
 		if($this->bButton) {
-			$sJs .= '<script src="/bundles/gendsocledatatable/js/library/Datatables/Buttons-1.1.2/js/dataTables.buttons.min.js"></script>';
-			$sJs .= '<script src="/bundles/gendsocledatatable/js/library/Datatables/Buttons-1.1.2/js/jszip.min.js"></script>';
-			$sJs .= '<script src="/bundles/gendsocledatatable/js/library/Datatables/Buttons-1.1.2/js/pdfmake.min.js"></script>';
-			$sJs .= '<script src="/bundles/gendsocledatatable/js/library/Datatables/Buttons-1.1.2/js/vfs_fonts.js"></script>';
-			$sJs .= '<script src="/bundles/gendsocledatatable/js/library/Datatables/Buttons-1.1.2/js/buttons.html5.min.js"></script>';
-			$sJs .= '<link rel="stylesheet" href="/bundles/gendsocledatatable/js/library/Datatables/Buttons-1.1.2/css/buttons.dataTables.min.css" />';
-			$sJs .= '<link rel="stylesheet" href="/bundles/gendsocledatatable/js/library/Datatables/Buttons-1.1.2/css/buttons.jqueryui.min.css" />';
+			$sJs .= '<script src="/bundles/gosyldatatable/js/library/Datatables/Buttons-1.1.2/js/dataTables.buttons.min.js"></script>';
+			$sJs .= '<script src="/bundles/gosyldatatable/js/library/Datatables/Buttons-1.1.2/js/jszip.min.js"></script>';
+			$sJs .= '<script src="/bundles/gosyldatatable/js/library/Datatables/Buttons-1.1.2/js/pdfmake.min.js"></script>';
+			$sJs .= '<script src="/bundles/gosyldatatable/js/library/Datatables/Buttons-1.1.2/js/vfs_fonts.js"></script>';
+			$sJs .= '<script src="/bundles/gosyldatatable/js/library/Datatables/Buttons-1.1.2/js/buttons.html5.min.js"></script>';
+			$sJs .= '<link rel="stylesheet" href="/bundles/gosyldatatable/js/library/Datatables/Buttons-1.1.2/css/buttons.dataTables.min.css" />';
+			$sJs .= '<link rel="stylesheet" href="/bundles/gosyldatatable/js/library/Datatables/Buttons-1.1.2/css/buttons.jqueryui.min.css" />';
 		}
 		
 		$sJs .= '<script type="text/javascript">//<!--

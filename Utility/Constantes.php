@@ -1,8 +1,8 @@
 <?php
-namespace GendSocle\DataTableBundle\Utility;
+namespace Gosyl\DataTableBundle\Utility;
 
 /**
- * @package GendSocle
+ * @package Gosyl
  * @subpackage DataTableBundle
  * @author alexandre.lippmann
  * @version 1.0

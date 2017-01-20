@@ -1,6 +1,6 @@
 <?php
 
-namespace GendSocle\DataTableBundle\Utility;
+namespace Gosyl\DataTableBundle\Utility;
 
 use Doctrine\ORM\QueryBuilder;
 

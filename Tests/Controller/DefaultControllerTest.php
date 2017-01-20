@@ -1,6 +1,6 @@
 <?php
 
-namespace GendSocle\DataTableBundle\Tests\Controller;
+namespace Gosyl\DataTableBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

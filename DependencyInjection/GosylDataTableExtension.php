@@ -1,6 +1,6 @@
 <?php
 
-namespace GendSocle\DataTableBundle\DependencyInjection;
+namespace Gosyl\DataTableBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * @link http://symfony.com/doc/current/cookbook/bundles/extension.html
  */
-class GendSocleDataTableExtension extends Extension
+class GosylDataTableExtension extends Extension
 {
     /**
      * {@inheritdoc}

@@ -1,4 +1,4 @@
-gend_socle_data_table_homepage.datatable:
+gosyl_data_table_homepage.datatable:
     path:     /
     defaults:
-        _controller: GendSocleDataTableBundle:Default:index
+        _controller: GosylDataTableBundle:Default:index
