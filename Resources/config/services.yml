@@ -1,0 +1,9 @@
+services:
+#    gend_socle_data_table.example:
+#        class: GendSocle\DataTableBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
+    twig.extension.datatable:
+            class: GendSocle\DataTableBundle\Twig\Datatable
+            public: false
+            tags:
+                - { name: twig.extension }

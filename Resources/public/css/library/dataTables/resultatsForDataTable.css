@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+
+.resultats {
+	font-size: 1em !important;
+}
+
+table.resultats {
+	font-size: 1em !important;
+	width: 100% !important;
+	color: #000000;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-left: 0 !important;
+}
+
+table.resultats th, table.resultats td {
+	text-align: center;
+}
