@@ -311,7 +311,7 @@ class Datatable extends \Twig_Extension {
 		
 		$sReturn = '<script type="text/javascript">
 						$(document).ready(function() {
-							var '.$this->sNameDatas.' = '.$xResultats.';
+							var '.$this->sNameDatas.' = "'.$xResultats.'";
 						});
 					</script>';
 		
