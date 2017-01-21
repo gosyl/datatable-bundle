@@ -62,7 +62,7 @@ namespace Gosyl\DataTableBundle\Twig;
  * 			}
  * 			",
  * 		);
- */ 
+ */
 class Datatable extends \Twig_Extension {
 	/**
 	 * Tableau contenant les paramètres des colonnes du dataTable
@@ -435,16 +435,17 @@ class Datatable extends \Twig_Extension {
 				new \Twig_SimpleFunction('datatable', array($this, 'datatableFunction'), array('is_safe' => array('html')))
 		);
 	}
-	
-	/**
-	 * @param array $aData Données du dataTable our url des données à télécharger en Ajax
-	 * @param string $bColVis Activation de l'extension Colvis
-	 * @param string $bButton Activation de l'extension permettant l'exportation
-	 * @param string $bFixedHeader Activation de l'extension FixedHeader
-	 * @param string $sClassTable Class css à appliquer au tableau
-	 * @param number $nColReference Colonne de référence
-	 */
-	public function datatableFunction($aData = array(), $bColVis = false, $bButton = false, $bFixedHeader = false, $sClassTable = 'resultats table datatable', $nColReference = 0) {
+
+    /**
+     * @param array $aData Données du dataTable our url des données à télécharger en Ajax
+     * @param bool|string $bColVis Activation de l'extension Colvis
+     * @param bool|string $bButton Activation de l'extension permettant l'exportation
+     * @param bool|string $bFixedHeader Activation de l'extension FixedHeader
+     * @param string $sClassTable Class css à appliquer au tableau
+     * @param int|number $nColReference Colonne de référence
+     * @return string
+     */
+	public function datatableFunction($aData = array(), $sClassTable = 'table table-striped table-bordered dataTable no-footer dt-responsive', $bColVis = false, $bButton = false, $bFixedHeader = false, $nColReference = 0) {
 		$this->nColRef = $nColReference;
 		$this->bColVis = $bColVis;
 		$this->bButton = $bButton;
