@@ -415,6 +415,7 @@ class Datatable extends \Twig_Extension {
 		} else {
 			$this->xResultat = 'Aucun résultat.';
 			$this->bResultatVide = true;
+			$this->bResultatAjax = false;
 		}
 		
 		if(is_array($aData) && isset($aData['cols'])) {
