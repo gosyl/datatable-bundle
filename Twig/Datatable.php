@@ -407,6 +407,8 @@ class Datatable extends \Twig_Extension {
 	protected function _setData($aData) {
 		if(isset($aData['results']['data']) && is_array($aData['results']['data']) && count($aData['results']['data']) > 0) { // Si les données sont présentes sous forme d'un tableau
 			$this->xResultat = json_encode($aData['results']['data']);
+			$this->bResultatAjax = false;
+			$this->bResultatVide = false;
 		} elseif(!isset($aData['cols']) && is_array($aData) && count($aData) > 0) {
 			$this->xResultat = $aData;
 		} elseif(is_string($aData['results']) && !empty($aData['results']) && !is_null($aData['results'])) {
