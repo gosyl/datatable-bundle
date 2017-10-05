@@ -1,0 +1,4 @@
+gosyl_data_table_homepage.datatable:
+    path:     /
+    defaults:
+        _controller: GosylDataTableBundle:Default:index

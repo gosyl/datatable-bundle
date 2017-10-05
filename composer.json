@@ -1,0 +1,25 @@
+{
+	"name" : "gosyl/DataTableBundle",
+	"type" : "symfony-bundle",
+	"description" : "Helper de vue pour la génération des dataTables",
+	"keywords" : [
+		"Symfony"
+	],
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "Alexandre LIPPMANN",
+			"email" : "alexandre.lippmann@free.fr",
+			"role" : "Developpeur WEB"
+		}
+	],
+	"autoload" : {
+		"psr-4" : {
+			"Gosyl\\DataTableBundle\\" : ""
+		}
+	},
+	"require" : {
+		"php" : ">=5.5.9",
+		"symfony/assetic-bundle" : "^2.3"
+	},
+	"minimum-stability" : "dev"
+}
