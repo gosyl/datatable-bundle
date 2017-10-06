@@ -1,5 +1,5 @@
 {
-	"name" : "gosyl/DataTableBundle",
+	"name" : "gosyl/datatable_bundle",
 	"type" : "symfony-bundle",
 	"description" : "Helper de vue pour la génération des dataTables",
 	"keywords" : [
